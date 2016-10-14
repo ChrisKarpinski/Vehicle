@@ -9,17 +9,17 @@
 
 public class Vehicle {
 
-	private String _licenseNum;
-	private String _colour;
-	private int _numberOfDoors;
-	private double _speed;
-	private double _maxSpeed;
+	protected String _licenseNum;
+	protected String _colour;
+	//protected int _numberOfDoors;
+	protected double _speed;
+	protected double _maxSpeed;
 	
-	public Vehicle (String colour, String license, double maxspeed, int doors) {
+	public Vehicle (String colour, String license, double maxspeed) {
 		this._licenseNum = license;
 		this._colour = colour;
 		this._maxSpeed = maxspeed;
-		this._numberOfDoors = doors;
+		//this._numberOfDoors = doors;
 	}
 	
 	protected void accelerate(int accelerateAmount) {
@@ -55,24 +55,21 @@ public class Vehicle {
     	return colour;
     }
     
-    public int getDoors() {
-    	int doors = this._numberOfDoors;
-    	return doors;
-    }
     
     public double getMaxSpeed() {
     	double maxspeed = this._maxSpeed;
     	return maxspeed;
     }
     
-    public void currentState() {
+    public String currentState() {
     	
-    	System.out.println("Vehicle 1: " + ",speed: " + getSpeed() + " ,colour: " + getColour()
-		+ " ,license plate #: " + getLicense() + " ,max speed: " + getMaxSpeed() + " # of doors: "
-		+ getDoors());
+    	String current;
+    	current = ",speed: " + getSpeed() + " ,colour: " + getColour()
+		+ " ,license plate #: " + getLicense() + " ,max speed: " + getMaxSpeed();
     	
-    	
+    	return current;
     	
     }
+    
     
 }
