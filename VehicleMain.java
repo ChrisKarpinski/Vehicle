@@ -11,17 +11,12 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Vehicle vehicle1 = new Vehicle("blue", "AAAA", 250, 4);
-		Vehicle vehicle2 = new Vehicle("red", "BBBAAA", 200, 2);
+		Bicycle bike1 = new Bicycle ("blue", "", 30, 2);
+		Truck truck = new Truck ("red", "AAAA", 150, 4);
+	 
 		
-		vehicle1.accelerate(70);
-		vehicle1.brake(20);
-		
-		vehicle2.accelerate(100);
-		vehicle2.brake(10);
-		
-		vehicle1.currentState();
-		vehicle2.currentState();
+		System.out.println("Bike1: " + bike1.currentState());
+		System.out.println("Truck1: " + truck.currentState());
 	}
 
 }
