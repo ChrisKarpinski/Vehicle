@@ -2,14 +2,20 @@ public class Bicycle extends Vehicle{
 	
 	private int _numberOfSeats;
 	
-	public Bicycle(String colour, String license, double maxspeed, int numberSeats) {
-		super(colour, "", maxspeed);
+	public Bicycle(String colour, double maxspeed, int numberSeats) {
+		super(colour, null, maxspeed);
 		
 		this._numberOfSeats = numberSeats;
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Bicycle(String colour, int numberSeats) {
+		super(colour, null, 0);
 	
+		
+		this._numberOfSeats = numberSeats;
+		// TODO Auto-generated constructor stub
+	}
 	
 	public int getSeats() {
 		
