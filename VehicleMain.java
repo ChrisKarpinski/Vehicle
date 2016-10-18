@@ -11,6 +11,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// below vehicle cannot be instantiated because Vehicle is an abstract class.
+		// Vehicle vehicle1 = new Vehicle();
 		Bicycle bike1 = new Bicycle ("blue", "", 30, 2);
 		Truck truck = new Truck ("red", "AAAA", 150, 4);
 	 
